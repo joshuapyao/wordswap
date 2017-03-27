@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> Word Swap </title>
+</head>
+<body>
+<form action="translate" method="post">
+	<label for="url">Please enter URL: </label>
+	<input type="text" id="url" name = "url" />
+	<br>
+	<label for="lang">Translate words to: </label>
+	<select name="lang" id="lang">
+		{% for l in languages %}
+			<option value={{l}}>{{langdictionary[l]}}</option>
+		{% endfor %}
+	</select>
+	<br>
+	<label for="amount">How many words: </label>
+	<select name="amount" id="amount">
+		<option value="few">Few</option>
+		<option value="half">Half</option>
+		<option value="most">Most</option>
+	</select>
+	<br>
+	<input type="submit" value="Translate" name="gobtn"/> 
+</form>
+</body>
+</html>

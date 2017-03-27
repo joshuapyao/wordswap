@@ -1,0 +1,15 @@
+/* Banner */
+#banner {
+  background-image: url("http://38.media.tumblr.com/758a591b24bfb13a5034db6631a6ddcd/tumblr_n7doueHy5y1sxeezjo5_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-behavior: url("css/ie/backgroundsize.min.htc"); }
+  #banner .inner {
+    background: #341b2b; }
+
+/* CTA  */
+#cta {
+  background-image: url("../../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-behavior: url("css/ie/backgroundsize.min.htc"); }

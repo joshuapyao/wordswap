@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty 1.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Word Swap</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/html5shiv.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+
+			<link href="stylesheets/skel.css" type="text/css" rel="stylesheet"/>
+			<link href="stylesheets/style.css" type="text/css" rel="stylesheet" />
+			<link rel="stylesheet" href="stylesheets/v8.css" />
+			<link rel="stylesheet" href="stylesheets/v9.css" />
+	</head>
+	<body class="index loading">
+	
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1>
+			</header>
+
+		<!-- Banner -->		
+			<section id="banner">
+				
+				<!--
+					".inner" is set up as an inline-block so it automatically expands
+					in both directions to fit whatever's inside it. This means it won't
+					automatically wrap lines, so be sure to use line breaks where
+					appropriate (<br />).
+				-->
+				<div class="inner">
+					
+					<header>
+						<h2>Word Swap</h2>
+					</header>
+					<p>This is <strong>Word Swap</strong>, a fun<br />
+					<strong>translation app</strong> to help<br />
+					improve your vocabulary
+					</p>
+					<footer>
+						<ul class="buttons vertical">
+							<li><a href="#main" class="button fit scrolly">Let's Go!</a></li>
+						</ul>
+					</footer>
+				
+				</div>
+				
+			</section>
+		
+		<!-- Main -->
+			<article id="main">
+<!-- 
+				<header class="special container">
+					<span class="icon fa-bar-chart-o"></span>
+					<h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP<br />
+					I decided to give it a really creative name.</h2>
+					<p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,<br />
+					it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>, 
+					and, like all my stuff,<br />
+					released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
+				</header> -->
+					
+				<!-- One -->
+					<section class="wrapper style2 container special-alt">
+						<div class="row half">
+							<div class="8u">
+							
+								<header>
+									<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+								</header>
+								<form action="translate" method="post">
+									<label for="url">Please enter URL: </label>
+									<input type="text" id="url" name = "url" />
+									<br>
+									<label for="lang">Translate words to: </label>
+									<select name="lang" id="lang">
+										{% for l in languages %}
+											<option value={{l}}>{{langdictionary[l]}}</option>
+										{% endfor %}
+									</select>
+									<br>
+									<label for="amount">How many words: </label>
+									<select name="amount" id="amount">
+										<option value="few">Few</option>
+										<option value="half">Half</option>
+										<option value="most">Most</option>
+									</select>
+									<br>
+									<input type="submit" value="Translate" name="gobtn"/> 
+								</form>
+								<footer>
+									<ul class="buttons">
+										<li><a href="#" class="button">Find Out More</a></li>
+									</ul>
+								</footer>
+							
+							</div>
+							<div class="4u skel-cell-important">
+							
+								<ul class="feature-icons">
+									<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
+									<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
+									<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
+									<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
+									<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
+									<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
+								</ul>
+							
+							</div>				
+						</div>
+					</section>
+					
+				<!-- Three -->
+					<section class="wrapper style3 container special">
+					
+						<header class="major">
+							<h2>{{title}}</h2>
+						</header>
+						
+												
+								<section>
+									<a href="#" class="image feature"><img src="images/pic01.jpg" alt="" /></a>
+									<header>
+										<h3>A Really Fast Train</h3>
+									</header>
+									<p> {{text}} Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+								</section>
+
+							
+								<section>
+									<a href="#" class="image feature"><img src="images/pic02.jpg" alt="" /></a>
+									<header>
+										<h3>An Airport Terminal</h3>
+									</header>
+									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+								</section>
+
+							
+								<section>
+									<a href="#" class="image feature"><img src="images/pic03.jpg" alt="" /></a>
+									<header>
+										<h3>Hyperspace Travel</h3>
+									</header>
+									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+								</section>
+
+							
+								<section>
+									<a href="#" class="image feature"><img src="images/pic04.jpg" alt="" /></a>
+									<header>
+										<h3>And Another Train</h3>
+									</header>
+									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+								</section>
+
+						<footer class="major">
+							<ul class="buttons">
+								<li><a href="#" class="button">See More</a></li>
+							</ul>
+						</footer>
+					
+					</section>
+					
+			</article>
+
+		<!-- CTA -->
+			<section id="cta">
+			
+				<header>
+					<h2>Ready to do <strong>something</strong>?</h2>
+					<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+				</header>
+				<footer>
+					<ul class="buttons">
+						<li><a href="#" class="button special">Take My Money</a></li>
+						<li><a href="#" class="button">LOL Wut</a></li>
+					</ul>
+				</footer>
+			
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+			
+				<ul class="icons">
+					<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+					<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+				</ul>
+				
+				<span class="copyright">&copy; Untitled. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+			
+			</footer>
+
+	</body>
+</html>
